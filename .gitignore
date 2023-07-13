@@ -2,3 +2,4 @@
 .vercel
 tmp/*
 .DS_Store
+*.pyc
