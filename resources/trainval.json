@@ -1,0 +1,24 @@
+{
+    "train": [
+        "quan-jogger-nam",
+        "quan-nam",
+        "do-boi-nam",
+        "vay-chong-nang-khau-trang",
+        "ao-nguc",
+        "ao-len-nam",
+        "ao-dai",
+        "do-hoa-trang-trang-phuc-cosplay-nam",
+        "bo-vest-nu",
+        "dam-nu",
+        "quan-nu",
+        "ao-nu",
+        "thoi-trang-nu-quan-dai",
+        "ao-len-cardigan"
+    ],
+    "val": [
+        "ao-hoodie-nu",
+        "ao-vest-blazer-nu",
+        "do-lot-do-ngu-nam",
+        "trang-phuc-cosplay"
+    ]
+}
