@@ -104,7 +104,12 @@ if __name__ == '__main__':
         fn = main,
         inputs=inputs_image,
         outputs=outputs_image,
-        title='Demo Image Search'
+        title='Demo Fashion Image Search',
+        examples=[
+            "./resources/blazer.jpg",
+            "./resources/dress.jpg",
+            "./resources/trouser.jpg"
+        ]
     )
 
     demo.launch()
