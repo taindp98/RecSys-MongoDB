@@ -1,7 +1,6 @@
 import os
 import pymongo
 import gradio as gr
-from pathlib import Path
 from mega import Mega
 
 from dotenv import load_dotenv
@@ -10,9 +9,6 @@ import torch.nn.functional as F
 import torch
 from huggingface_hub import hf_hub_download
 
-# BASE_DIR = Path(__file__).resolve().parent.parent
-# import sys
-# sys.path.append(str(BASE_DIR))
 from src.core.helper import load_model, read_image
 from src.core.load_config import load_config
 
