@@ -1,6 +1,6 @@
 torch
 timm==0.5.4
-numpy==1.20.3
+numpy==1.22.0
 Pillow==9.3.0
 requests==2.31.0
 pymongo==4.4.0
