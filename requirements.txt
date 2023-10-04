@@ -1,7 +1,7 @@
 torch
 timm==0.5.4
 numpy==1.22.0
-Pillow==9.3.0
+Pillow==10.0.1
 requests==2.31.0
 pymongo==4.4.0
 opencv-python==4.5.5.64
