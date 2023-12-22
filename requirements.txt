@@ -5,6 +5,6 @@ Pillow==10.0.1
 requests==2.31.0
 pymongo==4.4.0
 opencv-python==4.5.5.64
-gradio==3.34.0
+gradio==4.11.0
 mega.py==1.0.8
 python-dotenv==1.0.0
