@@ -2,8 +2,8 @@ torch
 timm==0.5.4
 numpy==1.22.0
 Pillow==10.3.0
-requests==2.32.0
-pymongo==4.4.0
+requests==2.31.0
+pymongo==4.6.3
 opencv-python==4.5.5.64
 gradio==4.36.0
 mega.py==1.0.8
