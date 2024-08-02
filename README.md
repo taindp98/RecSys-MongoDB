@@ -30,14 +30,8 @@ We can imagine the step by step to bring deep learning from the training phase i
 2. For every time, there is a new image as the query, we also need to present it in the feature space.
 3. Comparing the distance between the query feature and the gallery features. Two of the most popular approaches are Euclidean distance and Cosine Similarity.
 
-However, the feature extraction step is time-consuming and needs a lot of computational cost. We cannot keep the massive feature volume in the memory for a long time to wait for the query image.
-
-In the initial quest to tackle this challenge, the Facebook research team developed the FAISS library. While FAISS has made significant contributions, there are alternative approaches available to address the same problem, including Elastic Search and Milvus. Each library comes with its own advantages and limitations. By conducting experiments and gaining insights from these tools, you can explore their capabilities and choose the most appropriate solution for your specific problem.
-
-Within the scope of this blog, I am delighted to delve into Vector Search, one of the five exciting new capabilities recently introduced by MongoDB at the end of last month. Vector Search opens up fresh possibilities for advanced search and retrieval techniques, leveraging the power of vectors to enhance the efficiency and accuracy of search operations. Let's explore this remarkable feature and its potential impact on modern applications.
-
 ### Setup
-Atlas Vector Search, an integral part of MongoDB Atlas, eliminates the need to duplicate or transform your data, learn new syntax, or manage additional infrastructure. It enables you to seamlessly store vector embeddings alongside your operational data. With the flexibility provided by Atlas Triggers, your vector entries can be dynamically updated when your data changes. Furthermore, your application only needs to interact with a unified query interface, simplifying the integration of vector search functionality. By leveraging these powerful capabilities within the robust MongoDB Atlas platform, you can accelerate application development without compromising on performance or reliability. Follow the below steps to set up a database:
+Atlas Vector Search, an integral part of MongoDB Atlas, eliminates the need to duplicate or transform your data, learn new syntax, or manage additional infrastructure. Follow the below steps to set up a database:
 
 1. Create a cluster in MongoDB Atlas
 2. Then access the cluster and create a new project
