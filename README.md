@@ -1,6 +1,26 @@
-## The Implementation of Image Similarity Search using Vector Search
+<h1>
+  <img alt="ConAN logo" src="./docs/images/bg_clothes_vector.png" style="width: 100%;">
+  <p align="center">
+	Clothing Image Similarity Search <br> using Vector Search MongoDB </br>
+  </p>
+</h1>
+
+<p align="center">
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&style=flat" />
+<img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat" />
+</p>
+
+## Table of Contents
+
+- [Deployment](#deployment)
+- [Setup](#setup)
+- [Insert the features into DB](#insert-the-features-into-DB)
+- [Search Index and Querying](#search-index-and-querying)
+- [Results](#results)
+- [Contributing](#contributing)
+- [Star](#star)
+
 Similar image search is a notable application within the realm of Recommendation Systems. In this blog, I will provide an in-depth exploration of the step-by-step process involved in constructing a Similar Image Search System. Notably, I will highlight the utilization of the cutting-edge Vector Search engine recently introduced by the MongoDB team, showcasing its capabilities and contributions to the field.
-![](./resources/demo.gif)
 
 ## Deployment
 
@@ -16,29 +36,20 @@ In the initial quest to tackle this challenge, the Facebook research team develo
 
 Within the scope of this blog, I am delighted to delve into Vector Search, one of the five exciting new capabilities recently introduced by MongoDB at the end of last month. Vector Search opens up fresh possibilities for advanced search and retrieval techniques, leveraging the power of vectors to enhance the efficiency and accuracy of search operations. Let's explore this remarkable feature and its potential impact on modern applications.
 
-### MongoDB Atlas
-
-MongoDB Atlas, introduced in 2016, is a cloud-native, fully managed database service that enables developers to accelerate application development. Since its launch, Atlas has evolved into a comprehensive developer data platform, supporting various workloads such as transactions, search, analytics, and streaming. It offers a battle-tested infrastructure, ensuring high availability, scalability, and top-tier security. Excitingly, MongoDB Atlas now includes native support for vectors through Atlas Vector Search, simplifying the development of next-generation applications.
-
-### Vector Search
-
-Atlas Vector Search, an integral part of MongoDB Atlas, eliminates the need to duplicate or transform your data, learn new syntax, or manage additional infrastructure. It enables you to seamlessly store vector embeddings alongside your operational data. With the flexibility provided by Atlas Triggers, your vector entries can be dynamically updated when your data changes. Furthermore, your application only needs to interact with a unified query interface, simplifying the integration of vector search functionality. By leveraging these powerful capabilities within the robust MongoDB Atlas platform, you can accelerate application development without compromising on performance or reliability.
-
-### Setup the Vector Search
-
-Follow the below steps to set up a database:
+### Setup
+Atlas Vector Search, an integral part of MongoDB Atlas, eliminates the need to duplicate or transform your data, learn new syntax, or manage additional infrastructure. It enables you to seamlessly store vector embeddings alongside your operational data. With the flexibility provided by Atlas Triggers, your vector entries can be dynamically updated when your data changes. Furthermore, your application only needs to interact with a unified query interface, simplifying the integration of vector search functionality. By leveraging these powerful capabilities within the robust MongoDB Atlas platform, you can accelerate application development without compromising on performance or reliability. Follow the below steps to set up a database:
 
 1. Create a cluster in MongoDB Atlas
 2. Then access the cluster and create a new project
-![](./resources/atlas_1.png)
+![](./docs/images/atlas_1.png)
 3. The next thing is to access the project and create a new database and collection. In this blog, I will create a database called clothes_search and a collection named feature512
 4. To connect the database from your computer, we need to install the Python package of MongoDB.
 ```bash
 pip install pymongo
 ```
-![](./resources/atlas_2.png)
+![](./docs/images/atlas_2.png)
 After installing the pymongo, let’s back the to database dashboard and click on Connect to obtain the connection string. Then choose the connection modal is Drivers and take the examples.
-![](./resources/atlas_3.png)
+![](./docs/images/atlas_3.png)
 Now, we can access Atlas from your local machine by using this script
 ```python
 import pymongo
@@ -74,11 +85,11 @@ def insert_feature_to_db(
 ```
 
 The results insertion are shown in the below figure
-![](./resources/atlas_4.png)
-### Setup the Search Index and Querying
+![](./docs/images/atlas_4.png)
+### Search Index and Querying
 
 Before starting to search for anything you want, let’s just configure the method that you will use to communicate with the database. In the above figure, let’s click on the Search Indexes and create the new Index
-![](./resources/atlas_5.png)
+![](./docs/images/atlas_5.png)
 Should choose the term JSON Editor to start creating the new one. To search for a highly-dimensional vector, let’s follow my configuration.
 ```json
 {
@@ -149,6 +160,12 @@ with torch.no_grad():
 
 To assess the performance of both the deep learning model and the search method of Atlas Vector Search, I employed external images that were not part of the database. This enabled me to thoroughly evaluate the effectiveness and robustness of the framework I built. As you can see in the figure, the above item is the query image and the ten below images are the most similar samples in the gallery.
 
-## Conclusion
+![](./docs/images/search_results.png)
 
-Throughout this blog, I had the pleasure of introducing you to a remarkable and innovative capability of MongoDB: the Vector Search tool. This powerful feature empowers developers to explore advanced search and retrieval techniques, leveraging the potential of vectors to enhance the efficiency and accuracy of queries. With the Vector Search tool, MongoDB opens up exciting possibilities for applications in various domains such as recommendation systems, similarity matching, and content-based search. By seamlessly integrating this tool into your MongoDB-powered projects, you can unlock new dimensions of data exploration and deliver enhanced user experiences.
+## Contributing
+
+All contributions are welcome.
+
+## Star
+
+[![Star History Chart](https://api.star-history.com/svg?repos=taindp98/Clothes-RecSys-Vector-Search&type=Date)](https://star-history.com/#taindp98/Clothes-RecSys-Vector-Search&Date)
