@@ -43,7 +43,6 @@ pip install pymongo
 ```
 ![](./docs/images/atlas_2.png)
 After installing the pymongo, let’s back the to database dashboard and click on Connect to obtain the connection string. Then choose the connection modal is Drivers and take the examples.
-![](./docs/images/atlas_3.png)
 Now, we can access Atlas from your local machine by using this script
 ```python
 import pymongo
