@@ -1,5 +1,5 @@
 <h1>
-  <img alt="ConAN logo" src="./docs/images/bg_clothes_vector.png" style="width: 100%;">
+<!--   <img alt="ConAN logo" src="./docs/images/bg_clothes_vector.png" style="width: 100%;"> -->
   <p align="center">
 	Clothing Image Similarity Search <br> using Vector Search MongoDB </br>
   </p>
