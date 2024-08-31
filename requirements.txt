@@ -4,7 +4,7 @@ numpy==1.22.0
 Pillow==10.3.0
 requests==2.32.2
 pymongo==4.6.3
-opencv-python==4.5.5.64
+opencv-python==4.8.1.78
 gradio==4.36.0
 mega.py==1.0.8
 python-dotenv==1.0.0
